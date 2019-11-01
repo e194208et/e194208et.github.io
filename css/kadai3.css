@@ -1,0 +1,25 @@
+h1{
+    color:aliceblue;
+    font-family:"'Noto Sans JP', sans-serif";
+    text-align: center;
+    background-color:black;
+}
+h2{
+    color:burlywood;
+    font-family:"Impact";
+}
+h3{
+    color:coral;
+    font-family: "Yu Gothic"
+    
+}
+p{
+    font-size: 25px;
+    font-weight:bold;
+   
+}
+body{
+    background-image: url("../images/margiela.png");
+    background-repeat:no-repeat;
+    background-position: top center;
+}
