@@ -1,0 +1,58 @@
+h1#h1-1{
+    background-color:dimgrey;
+    text-align: center;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1#h1-2{
+    background-color: black;
+    text-align: center;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2#h2-1{
+    background-color:aliceblue;
+    text-align: center;
+    color: black;
+    width:400px;
+    height: 40px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+}
+h2#h2-2{
+    background-color:darkred;
+    text-align: center;
+    color: black;
+    width:400px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+body{
+    background-image:url(../images/rooth2-3-2.jpg);
+    background-size: cover;
+    color: aliceblue;
+    text-align: center;
+}
+div{text-align: center;
+    
+}
+a{
+    color:currentColor;
+    font-weight: bold;
+}
+ul{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto
+}
+p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
