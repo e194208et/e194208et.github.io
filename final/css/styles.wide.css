@@ -1,0 +1,258 @@
+html, body,div.mainMenu{ 
+    height: 300%;
+    margin: 0;
+}
+/*リンクタグの設定*/
+a{
+    color: white;
+    text-decoration:none;
+}
+
+/*<メニューバーにカーソルを当てたとき浮かび上がらせる>*/
+.hover{
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+    padding: 0.6em 0.5em;
+    margin: 0 0 0.5em;
+    transition: all 0.3s ease 0s;
+}
+
+a:hover[href$=html]{
+    
+    transform: translateY(-0.1875em);
+    opacity: 0.7;
+}
+/*</>*/
+
+header{
+    background-color: black;
+    font-size: 40px;
+    text-align: center;
+    color: azure;
+    height: 60px;
+    line-height: 2.5;
+    height: 100px;
+}
+
+div.TopHeading{
+    background-color: white;
+    font-size: 30px;
+    text-align: center;
+    height: 60px;
+    line-height: 2;
+}
+
+/*
+配置ズレ予防のfont-size:0;
+わかりやすく背景色をつけて画面の高さいっぱいに表示させる命令
+*/
+
+/*<見出し以降のページの設定>*/
+main{
+    font-size: 0;
+    background-color: currentColor;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.container{
+    display: flex;
+}
+
+/*横幅を固定して、メインページに余白を専有させる*/
+.menuBar{
+    flex: 0 280px;
+}
+
+.main{
+    flex: 1;
+}
+/*</>*/
+
+/*<メニューバーの設置>*/
+div.menuBar{
+    color: aliceblue;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+/*<メインメニューの設置>*/
+div.mainMenu{
+    font-size: 18px;
+    width: 100%;
+    height: 4%;
+/*    いつか外すけどわかりやすいから枠線つけとく*/
+/*
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    box-sizing: border-box;
+*/
+}
+
+/*<メニューリストの書体の設定>*/
+div.list{
+    text-align: center;
+    line-height: 4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+}
+
+/*<メニューリストの空白の設定>*/
+div.top{
+    flex: 1 1 ;
+}
+
+div.center{
+    flex: 1 1 ;
+}
+
+div.bottom{
+    flex: 1 1 ;
+}
+
+/*<ページメニューの設置>*/
+div.pageMenu{
+    font-size: 16px;
+    width: 100%;
+    height: 59%;
+/*    いつか外すけどわかりやすいから枠線つけとく*/
+/*
+    border-right: 2px solid white;
+    box-sizing: border-box;
+*/
+}
+
+/*<メインページの設定>*/
+div.main{
+    font-size: 16px;
+    color: azure;
+    height: 100%;
+    width:80%;
+    text-align: center;
+    padding: 0 25px;
+}
+
+
+
+/*ボックス全体*/
+.accbox {
+    margin: 2em 0;
+    padding: 0; 
+    text-align: center;
+    
+}
+
+/*ラベル*/
+.accbox label {
+    display: block;
+    margin: 1.5px 0;
+    padding : 11px 12px;
+    color :white;
+    font-weight: bold;
+    cursor :pointer;
+    transition: all 0.5s;
+    background: black; 
+    
+}
+
+/*ラベルホバー時*/
+.accbox label:hover {
+    background :white;
+    color: black
+}
+
+/*チェックは隠す*/
+.accbox input{
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.accbox .accshow {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.cssacc:checked + .accshow {
+    height: auto;
+    padding: 5px;
+    background: black;
+    opacity: 1;
+}
+
+
+hr{
+    border-width: 0 0 1px;
+    border-image: linear-gradient(
+    90deg,
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0.5) 50%,
+    hsla(0, 0%, 100%, 0) 100%) 0 0 100%;
+    border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+dt{
+    color: azure;
+    line-height: 3em;
+}
+dd{
+    padding: .5em 0 ;
+    color: azure;
+    width: 600px;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width: 600px;
+    object-fit: cover;
+}
+
+img.abo{
+    width: 400px;
+}
+img.loco{
+    width: 400px;
+}
+img.combo{
+    width: 400px;
+}
+
+li{
+    position: relative;
+    
+}
+
+dl{
+    position: absolute;
+    top: 0;
+/*
+    left: 50%;
+    transform: translateX(-50%);
+*/
+    transition: opacity .6s, transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+:hover img{
+    opacity: .4;
+}
+:not(:hover) dl {
+	opacity: 0;
+	transform: translateY(100%);
+}
+:not(:hover) img {
+	opacity: 1;
+    transform: .6s;
+}
+    
